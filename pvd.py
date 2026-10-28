@@ -5,7 +5,7 @@ discount_total = 0.0
 final_total = 0.0
 
 while True:
-    value = float(input("Qual o valor: (0 = encerrar):"))
+    value = float(input("Qual o valor: (0 = encerrar): "))
     if value == 0:
         break
     if value < 0:
@@ -19,7 +19,7 @@ while True:
             age = int(age_input)
             break
         else:
-            print("Idade inválida! Digite apenas números.")
+            print("Idade inválida! Digite apenas números inteiros não-negativos.")
 
     final_value = value
     if age >= 65:
@@ -27,7 +27,7 @@ while True:
     if final_value > 100:
         final_value *= 0.90
     discount = value - final_value
-    print(f" O valor fianl é R${final_value:.2f} ")
+    print(f"O valor final é R${final_value:.2f} ")
 
     shopping.append({"gross": value, "final": final_value, "discount": discount})
 
