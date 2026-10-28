@@ -11,19 +11,16 @@ while True:
     if value < 0:
         print("valor invalido!")
         continue
-    age_input = input("Idade: ")
-    if age_input.isdigit():
-        age = int(age_input)
-    else:
-        age = -1
 
-    while age < 0:
-        print("Idade invalida")
-        age_input = input("Digite a idade novamente: ")
-        if age_input.isdigit():
+    while True:
+        age_input = input("Idade: ")
+
+        if age_input.isnumeric():
             age = int(age_input)
+            break
         else:
-            age = -1
+            print("Idade inválida! Digite apenas números.")
+
     final_value = value
     if age >= 65:
         final_value *= 0.80
