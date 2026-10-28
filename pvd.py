@@ -35,4 +35,12 @@ while True:
     discount_total += discount
     final_total += final_value
 
-print(f"Resumo quantidade {len(shopping)} Total {gross_total}")
+print("\n" + "=" * 30)
+print(f"{'RESUMO DO PEDIDO':^30}")
+print("=" * 30)
+print(f"Quantidade de itens: {len(shopping):>9}")
+print(f"Total Bruto:        R${gross_total:>8.2f}")
+print(f"Total de Descontos: R${discount_total:>8.2f}")
+print("-" * 30)
+print(f"TOTAL A PAGAR:      R${final_total:>8.2f}")
+print("=" * 30)
