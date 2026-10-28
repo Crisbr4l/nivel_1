@@ -11,17 +11,26 @@ while True:
     if value < 0:
         print("valor invalido!")
         continue
-    age = int(input("Idade: "))
+    age_input = input("Idade: ")
+    if age_input.isdigit():
+        age = int(age_input)
+    else:
+        age = -1
+
     while age < 0:
         print("Idade invalida")
-        idade = int(input("Digite aa idade novamente: "))
+        age_input = input("Digite a idade novamente: ")
+        if age_input.isdigit():
+            age = int(age_input)
+        else:
+            age = -1
     final_value = value
     if age >= 65:
         final_value *= 0.80
     if final_value > 100:
         final_value *= 0.90
     discount = value - final_value
-    print(f" O valor fianl é R${final_value:,.2f} ")
+    print(f" O valor fianl é R${final_value:.2f} ")
 
     shopping.append({"gross": value, "final": final_value, "discount": discount})
 
@@ -29,6 +38,4 @@ while True:
     discount_total += discount
     final_total += final_value
 
-    print(
-        f"Resumo quantidade {len(shopping)} Total {gross_total} {discount_total} {final_total}"
-    )
+print(f"Resumo quantidade {len(shopping)} Total {gross_total}")
