@@ -16,7 +16,7 @@ Um programa simples em Python que simula um caixa de loja. Você digita o valor 
 
 ## Como rodar
 
-Precisa ter Python instalado (versão 3.8 ou mais nova).
+Precisa ter Python instalado (versão 3.8 ou mais nova) e Git.
 
 ```bash
 git clone https://github.com/Crisbr4l/nivel_1.git
