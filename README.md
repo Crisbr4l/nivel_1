@@ -67,7 +67,7 @@ TOTAL A PAGAR:      R$  234.90
 - Somar totais com acumuladores
 - Formatar número com `:.2f` e alinhar com `:>9`
 - Usar branch no Git pra cada parte do projeto
-- Guarda cada compra numa lista pra montar o resumo no final usando `.append()`
+- Guardar cada compra numa lista pra montar o resumo no final usando `.append()`
 ---
 
 
